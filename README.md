@@ -1,2 +1,2 @@
-# webform-submit-php
-Simple webform submission in PHP
+# Webform Submit PHP
+Simple webform submission in PHP as part of my studies

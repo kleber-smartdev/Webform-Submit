@@ -2,7 +2,7 @@
 if(isset($_POST['submit'])){
     $to = "email@email.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
-    $full_name = $_POST['fname'];
+    $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
     $subject = "Webform submission";
     $subject2 = "Copy of your Webform submission";
@@ -24,7 +24,7 @@ if(isset($_POST['submit'])){
 <body>
 
 <form action="" method="post">
-Full Name: <input type="text" name="fname"><br>
+First Name: <input type="text" name="first_name"><br>
 Last Name: <input type="text" name="last_name"><br>
 Email: <input type="text" name="email"><br>
 Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>

@@ -3,7 +3,7 @@ if(isset($_POST['submit'])){
     $to = "email@email.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $full_name = $_POST['fname'];
-    //$last_name = $_POST['last_name'];
+    $last_name = $_POST['last_name'];
     $subject = "Webform submission";
     $subject2 = "Copy of your Webform submission";
     $message = $fname . " " . $email . " wrote the following:" . "\n\n" . $_POST['message'];
@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
 
 <form action="" method="post">
 Full Name: <input type="text" name="fname"><br>
-<!--Last Name: <input type="text" name="last_name"><br>-->
+Last Name: <input type="text" name="last_name"><br>
 Email: <input type="text" name="email"><br>
 Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
 <input type="submit" name="submit" value="Submit">
